@@ -1,0 +1,45 @@
+/*
+ Localizable.strings
+ WeatherNow
+ 
+ Created by Lawrence Herb on 11/16/17.
+ Copyright © 2017 Larry Herb. All rights reserved.
+ */
+
+//=============================================================================================
+//  VIEW CONTROLLER STRINGS
+//=============================================================================================
+
+//===============================
+//  Intro View Controller
+//-------------------------------
+"introView_appTitle"="El tiempo ahora!";
+"introView_copyrightText"="© 2017 Larry Herb";
+
+//===============================
+//  Main View Controller
+//-------------------------------
+"mainView_loadCity_errorMessage_title" = "Error de carga";
+"mainView_loadCity_errorMessage"="Error al cargar datos meteorológicos, comprobar la conexión a Internet o actualizar el nombre de la ciudad para seguir el siguiente formato: Boston";
+
+"mainView_loadCity_errorMessage_okButton"="DE ACUERDO";
+"mainView_loadCity_successMessage"="Data Loaded For ";
+
+"mainView_currentConditions_titleLabel"="Condiciones actuales";
+"mainView_currentConditions_humidityLabel"="Humedad";
+"mainView_currentConditions_windLabel"="Viento";
+"mainView_currentConditions_pressureLabel"="Presión";
+"mainView_currentConditions_minLabel"="Temperatura mínima";
+"mainView_currentConditions_maxLabel"="Temperatura máxima";
+"mainView_CurrentConditions_metersPerSecondLabel"="Metros por segundo";
+
+//===============================
+//  Location Settings View Controller
+//-------------------------------
+"locationSettingsView_popupMessage_enterCityTitle"="Por favor, introduzca una ciudad";
+"locationSettingsView_popupMessage_enterCity"="Ingrese un nombre de ciudad, por ejemplo: Boston";
+"locationSettingsView_popupMessage_cityUpdated"="La ciudad ha sido actualizada";
+"locationSettingsView_popupMessage_okBtn"="DE ACUERDO";
+"locationSettingsView_currentlySetToLabel"="Actualmente configurado para";
+"locationSettingsView_enterCity"="Ingresa a la ciudad aquí";
+"locationSettingsView_backBtn"="Espalda";

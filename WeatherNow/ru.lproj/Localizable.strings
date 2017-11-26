@@ -1,0 +1,44 @@
+/*
+ Localizable.strings
+ WeatherNow
+ 
+ Created by Lawrence Herb on 11/16/17.
+ Copyright © 2017 Larry Herb. All rights reserved.
+ */
+
+//=============================================================================================
+//  VIEW CONTROLLER STRINGS
+//=============================================================================================
+
+//===============================
+//  Intro View Controller
+//-------------------------------
+"introView_appTitle"="Погода сейчас!";
+"introView_copyrightText"="© 2017 Larry Herb";
+
+//===============================
+//  Main View Controller
+//-------------------------------
+"mainView_loadCity_errorMessage_title" = "Ошибка загрузки";
+"mainView_loadCity_errorMessage"="Ошибка загрузки данных о погоде, проверки подключения к Интернету или обновления имени города, чтобы следовать следующему формату: Boston";
+"mainView_loadCity_errorMessage_okButton"="ОК";
+"mainView_loadCity_successMessage"="Data Loaded For ";
+
+"mainView_currentConditions_titleLabel"="Текущие условия";
+"mainView_currentConditions_humidityLabel"="влажность";
+"mainView_currentConditions_windLabel"="ветер";
+"mainView_currentConditions_pressureLabel"="давление";
+"mainView_currentConditions_minLabel"="Минимальная температура";
+"mainView_currentConditions_maxLabel"="Максимальная температура";
+"mainView_CurrentConditions_metersPerSecondLabel"="Метры в секунду";
+
+//===============================
+//  Location Settings View Controller
+//-------------------------------
+"locationSettingsView_popupMessage_enterCityTitle"="Пожалуйста, введите город";
+"locationSettingsView_popupMessage_enterCity"="Пожалуйста, введите название города: Boston";
+"locationSettingsView_popupMessage_cityUpdated"="Город обновлен";
+"locationSettingsView_popupMessage_okBtn"="ОК";
+"locationSettingsView_currentlySetToLabel"="В настоящее время установлено";
+"locationSettingsView_enterCity"="Введите город здесь";
+"locationSettingsView_backBtn"="назад";

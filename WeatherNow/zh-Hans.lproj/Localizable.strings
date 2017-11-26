@@ -1,0 +1,44 @@
+/*
+ Localizable.strings
+ WeatherNow
+ 
+ Created by Lawrence Herb on 11/16/17.
+ Copyright © 2017 Larry Herb. All rights reserved.
+ */
+
+//=============================================================================================
+//  VIEW CONTROLLER STRINGS
+//=============================================================================================
+
+//===============================
+//  Intro View Controller
+//-------------------------------
+"introView_appTitle"="天气现在!";
+"introView_copyrightText"="© 2017 Larry Herb";
+
+//===============================
+//  Main View Controller
+//-------------------------------
+"mainView_loadCity_errorMessage_title" = "加载错误";
+"mainView_loadCity_errorMessage"="加载天气数据，检查Internet连接或更新城市名称时出错，请遵循以下格式： Boston";
+"mainView_loadCity_errorMessage_okButton"="好";
+"mainView_loadCity_successMessage"="Data Loaded For ";
+
+"mainView_currentConditions_titleLabel"="现在的情况";
+"mainView_currentConditions_humidityLabel"="湿度";
+"mainView_currentConditions_windLabel"="风";
+"mainView_currentConditions_pressureLabel"="压力";
+"mainView_currentConditions_minLabel"="最低温度";
+"mainView_currentConditions_maxLabel"="最高温度";
+"mainView_CurrentConditions_metersPerSecondLabel"="米每秒";
+
+//===============================
+//  Location Settings View Controller
+//-------------------------------
+"locationSettingsView_popupMessage_enterCityTitle"="请输入一个城市";
+"locationSettingsView_popupMessage_enterCity"="请输入城市名称例如: Boston";
+"locationSettingsView_popupMessage_cityUpdated"="城市已经更新";
+"locationSettingsView_popupMessage_okBtn"="好";
+"locationSettingsView_currentlySetToLabel"="目前设置为";
+"locationSettingsView_enterCity"="在这里输入城市";
+"locationSettingsView_backBtn"="背部";

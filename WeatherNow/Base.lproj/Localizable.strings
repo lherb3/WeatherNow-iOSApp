@@ -1,0 +1,46 @@
+/*
+ Localizable.strings
+ WeatherNow
+ 
+ Created by Lawrence Herb on 11/16/17.
+ Copyright © 2017 Larry Herb. All rights reserved.
+ */
+
+//=============================================================================================
+//  VIEW CONTROLLER STRINGS
+//=============================================================================================
+
+//===============================
+//  Intro View Controller
+//-------------------------------
+"introView_appTitle"="Weather Now!";
+"introView_copyrightText"="© 2017 Larry Herb";
+
+//===============================
+//  Main View Controller
+//-------------------------------
+"mainView_loadCity_errorMessage_title" = "Loading Error";
+"mainView_loadCity_errorMessage"="Error Loading Weather Data, Check Internet Connection, or update city name to follow the following format: Boston";
+"mainView_loadCity_errorMessage_okButton"="OK";
+"mainView_loadCity_successMessage"="Data Loaded For ";
+
+"mainView_currentConditions_titleLabel"="Current Conditions";
+"mainView_currentConditions_humidityLabel"="Humidity";
+"mainView_currentConditions_windLabel"="Wind";
+"mainView_currentConditions_pressureLabel"="Pressure";
+"mainView_currentConditions_minLabel"="Minimum temperature";
+"mainView_currentConditions_maxLabel"="Maximum temperature";
+"mainView_CurrentConditions_metersPerSecondLabel"="Meters Per Second";
+
+//===============================
+//  Location Settings View Controller
+//-------------------------------
+"locationSettingsView_popupMessage_enterCityTitle"="Please Enter A City";
+"locationSettingsView_popupMessage_enterCity"="Please Enter a City Name ex: Boston";
+"locationSettingsView_popupMessage_cityUpdated"="The City Has Been Updated";
+"locationSettingsView_popupMessage_okBtn"="OK";
+"locationSettingsView_currentlySetToLabel"="Currently Set To";
+"locationSettingsView_enterCity"="Enter City Here";
+"locationSettingsView_backBtn"="Back";
+
+

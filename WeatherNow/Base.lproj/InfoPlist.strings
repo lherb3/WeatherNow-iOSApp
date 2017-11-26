@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  WeatherNow
+
+  Created by Lawrence Herb on 11/26/17.
+  Copyright © 2017 Lawrence Herb. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Weather Now";
+"CFBundleName" = "Weather Now";
