@@ -1,11 +1,11 @@
-# Weather Now
+# Weather Now for iOS
 
 ## Overview
 Weather Now is a iOS app written in the Swift Programming Langauge, that has been published as coding sample from me (Larry Herb). The app is a very simple app that allows you to look up the weather for a specific location by cityname using the http://www.openweathermap.org/ API. While the app may be updated, it may not be updated to meet changing platform standards.
 
 ## Features
 The following are a number of the features of this app.
-* Presents Weather Infroammtion on a Visually Animated User Interface
+* Presents Weather Information on a Visually Animated User Interface
 * Downloads Weather Icon Image
 * Downloads JSON Feed from REST service and displays information on the interface.
 * Presents Information with Multi Language Support includes (English, Spanish, Chinese, & Russian) 
