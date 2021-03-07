@@ -62,7 +62,7 @@ class IntroViewController: UIViewController {
         let weatherNowLogoImageView = UIImageView(frame: CGRect(x: (brandBoxView.frame.size.width-200)/2, y: (brandBoxView.frame.size.height-245), width: 200, height: 175));
         let weatherImage = UIImage(named: "weather_launch_image.png");
         weatherNowLogoImageView.image = weatherImage;
-        weatherNowLogoImageView.contentMode = UIViewContentMode.scaleAspectFit;
+        weatherNowLogoImageView.contentMode = UIView.ContentMode.scaleAspectFit;
         brandBoxView.addSubview(weatherNowLogoImageView);
         
         //Weather Now Text

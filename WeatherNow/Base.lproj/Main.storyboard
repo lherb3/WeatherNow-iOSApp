@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +11,7 @@
         <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="IntroViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +21,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TMa-6Z-qBK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0vf-LI-HZl"/>
@@ -30,7 +29,6 @@
                             <constraint firstItem="TMa-6Z-qBK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZCp-fB-YWb"/>
                             <constraint firstItem="TMa-6Z-qBK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gSc-rJ-gLy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="TMa-6Z-qBK" id="gW6-ec-P5f"/>
@@ -44,7 +42,7 @@
         <!--Main View Controller-->
         <scene sceneID="nzR-JG-pca">
             <objects>
-                <viewController id="noA-Ks-p5v" customClass="MainViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="noA-Ks-p5v" customClass="MainViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBL-pU-rn9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +52,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="WHE-2j-xBa"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2uc-y7-DFR" firstAttribute="trailing" secondItem="WHE-2j-xBa" secondAttribute="trailing" id="2XH-XQ-hVa"/>
@@ -61,7 +60,6 @@
                             <constraint firstItem="2uc-y7-DFR" firstAttribute="top" secondItem="kBL-pU-rn9" secondAttribute="top" id="FtR-j0-vL7"/>
                             <constraint firstItem="2uc-y7-DFR" firstAttribute="leading" secondItem="WHE-2j-xBa" secondAttribute="leading" id="dPU-hR-F43"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WHE-2j-xBa"/>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="2uc-y7-DFR" id="Reu-XX-GJp"/>
@@ -75,7 +73,7 @@
         <!--Location Settings View Controller-->
         <scene sceneID="DsT-xu-4iQ">
             <objects>
-                <viewController id="CU6-BN-ble" customClass="LocationSettingsViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="CU6-BN-ble" customClass="LocationSettingsViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K0Z-Pc-5F5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +83,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="VaA-CT-2oO"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="67m-J0-TDs" firstAttribute="top" secondItem="K0Z-Pc-5F5" secondAttribute="top" id="LfC-tM-z3s"/>
@@ -92,7 +91,6 @@
                             <constraint firstItem="67m-J0-TDs" firstAttribute="leading" secondItem="VaA-CT-2oO" secondAttribute="leading" id="ka5-ao-wcH"/>
                             <constraint firstItem="67m-J0-TDs" firstAttribute="bottom" secondItem="VaA-CT-2oO" secondAttribute="bottom" id="sRp-Q8-w96"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="VaA-CT-2oO"/>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="67m-J0-TDs" id="ccu-EU-tBX"/>
