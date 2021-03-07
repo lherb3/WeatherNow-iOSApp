@@ -39,8 +39,8 @@ class MainViewController: UIViewController {
         DispatchQueue.main.async(execute: {
             //Load Next Screen
             
-            let alert = UIAlertController(title: NSLocalizedString("mainView_loadCity_errorMessage_title", comment: "Error Title"), message:NSLocalizedString("mainView_loadCity_errorMessage", comment: "Load City Error Message"), preferredStyle: UIAlertControllerStyle.alert);
-            alert.addAction(UIAlertAction(title: NSLocalizedString("mainView_loadCity_errorMessage_okButton", comment: "OK Button"), style: UIAlertActionStyle.default, handler: {(handler) in
+            let alert = UIAlertController(title: NSLocalizedString("mainView_loadCity_errorMessage_title", comment: "Error Title"), message:NSLocalizedString("mainView_loadCity_errorMessage", comment: "Load City Error Message"), preferredStyle: UIAlertController.Style.alert);
+            alert.addAction(UIAlertAction(title: NSLocalizedString("mainView_loadCity_errorMessage_okButton", comment: "OK Button"), style: UIAlertAction.Style.default, handler: {(handler) in
                 print("OK Button Pressed");
                 self.performSegue(withIdentifier: "locationSettings_segue", sender: self);
             }));
@@ -255,7 +255,7 @@ class MainViewController: UIViewController {
         let locationIconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 60));
         let locationIconImage = UIImage(named: "location_icon.png");
         locationIconImageView.image = locationIconImage;
-        locationIconImageView.contentMode = UIViewContentMode.scaleAspectFit;
+        locationIconImageView.contentMode = UIView.ContentMode.scaleAspectFit;
         locationContainerView.addSubview(locationIconImageView);
         
         let locationSelectorWhiteBorderView = UIView(frame: CGRect(x: 0, y: locationContainerView.frame.size.height-4, width: locationContainerView.frame.size.width, height: 4))
@@ -297,7 +297,7 @@ class MainViewController: UIViewController {
         let weatherConditionIconImage = UIImage(named: "location_icon.png");
         //http://openweathermap.org/img/w/10n.png
         weatherConditionIcon.image = weatherConditionIconImage;
-        weatherConditionIcon.contentMode = UIViewContentMode.scaleAspectFit;
+        weatherConditionIcon.contentMode = UIView.ContentMode.scaleAspectFit;
         currentConditionsSummaryView.addSubview(weatherConditionIcon);
         
         //Current Conditions Desc Text

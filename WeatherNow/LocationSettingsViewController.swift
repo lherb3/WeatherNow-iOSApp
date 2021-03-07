@@ -32,8 +32,8 @@ class LocationSettingsViewController: UIViewController, UITextFieldDelegate {
         searchTextField.resignFirstResponder();
         if(searchTextField.text!==""){
             //Empty Textbox
-            let alert = UIAlertController(title: NSLocalizedString("locationSettingsView_popupMessage_enterCityTitle", comment: "Please Enter A City Title"), message:NSLocalizedString("locationSettingsView_popupMessage_enterCity", comment: "Enter City Name"), preferredStyle: UIAlertControllerStyle.alert);
-            alert.addAction(UIAlertAction(title: NSLocalizedString("locationSettingsView_popupMessage_okBtn", comment: "OK Button"), style: UIAlertActionStyle.default, handler: nil));
+            let alert = UIAlertController(title: NSLocalizedString("locationSettingsView_popupMessage_enterCityTitle", comment: "Please Enter A City Title"), message:NSLocalizedString("locationSettingsView_popupMessage_enterCity", comment: "Enter City Name"), preferredStyle: UIAlertController.Style.alert);
+            alert.addAction(UIAlertAction(title: NSLocalizedString("locationSettingsView_popupMessage_okBtn", comment: "OK Button"), style: UIAlertAction.Style.default, handler: nil));
             self.present(alert, animated: true, completion: nil)
         }else{
             //Text Box Has Text
@@ -97,11 +97,11 @@ class LocationSettingsViewController: UIViewController, UITextFieldDelegate {
         mainView.addSubview(topHalfView)
         
         let backButton = UIButton(frame: CGRect(x: 15, y: 0, width: 100, height: 60));
-        backButton.setTitle(NSLocalizedString("locationSettingsView_backBtn", comment: "Back Button Text"), for: UIControlState.normal);
+        backButton.setTitle(NSLocalizedString("locationSettingsView_backBtn", comment: "Back Button Text"), for: UIControl.State.normal);
         backButton.titleLabel?.font =  backButton.titleLabel?.font.withSize(20);
         backButton.addTarget(self, action: #selector(backBtnAction), for: .touchUpInside);
-        backButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left;
-        backButton.setTitleColor(UIColor.white, for: UIControlState.normal);
+        backButton.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left;
+        backButton.setTitleColor(UIColor.white, for: UIControl.State.normal);
         topHalfView.addSubview(backButton);
         
         //-----------------------------------
@@ -116,8 +116,8 @@ class LocationSettingsViewController: UIViewController, UITextFieldDelegate {
         searchTextField.textColor = UIColor.white;
         searchTextField.background = nil;
         searchTextField.delegate = self;
-        searchTextField.clearButtonMode = UITextFieldViewMode.whileEditing;
-        let placeholder = NSAttributedString(string: NSLocalizedString("locationSettingsView_enterCity", comment: "Enter City Name Here Text"), attributes: [NSAttributedStringKey.foregroundColor : UIColor.white])
+        searchTextField.clearButtonMode = UITextField.ViewMode.whileEditing;
+        let placeholder = NSAttributedString(string: NSLocalizedString("locationSettingsView_enterCity", comment: "Enter City Name Here Text"), attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         searchTextField.attributedPlaceholder = placeholder;
         locationTextboxContainerView.addSubview(searchTextField);
         
@@ -131,8 +131,8 @@ class LocationSettingsViewController: UIViewController, UITextFieldDelegate {
         
         let applyButton = UIButton(frame: CGRect(x: locationTextboxContainerView.frame.size.width-40, y: 0, width: 40, height: 60-4));
         let locationIconImage = UIImage(named: "search_icon.png");
-        applyButton.setImage(locationIconImage, for: UIControlState.normal);
-        applyButton.contentMode = UIViewContentMode.scaleAspectFit;
+        applyButton.setImage(locationIconImage, for: UIControl.State.normal);
+        applyButton.contentMode = UIView.ContentMode.scaleAspectFit;
         applyButton.addTarget(self, action: #selector(applyBtnAction), for: .touchUpInside);
         locationTextboxContainerView.addSubview(applyButton);
         
